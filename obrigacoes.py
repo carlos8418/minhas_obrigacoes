@@ -1,7 +1,8 @@
+
 import datetime
 import requests
 
-NOME_DO_SEU_CANAL = "minhas_obrigacoes_Carlos_Guaxe"
+NOME_DO_SEU_CANAL = "minha_obrigacoes_Carlos_Guaxe"
 
 def enviar_notificacao(mensagem):
     url = f"https://ntfy.sh/{NOME_DO_SEU_CANAL}"
