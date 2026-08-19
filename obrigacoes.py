@@ -24,6 +24,11 @@ def verificar_obrigacoes():
     # --- SUAS OBRIGAÇÕES SEMANAIS ---
     if dia_semana == 0:
         enviar_notificacao("Hoje é dia de: Verificar diário de obras")
+    if dia_semna == 1:
+        enviar_notificação("Hoje é dia de: Extrair as planilhas de combustivel/terceiros e corrigi-las no excel")
+        
+    if dia_semana== 2:
+        enviar_notificacao("Hoje é dia de:Extrair as planilhas de insumos e corrigi-la no execel")
     
     elif dia_semana == 3:
         enviar_notificacao("Hoje é dia de: Preencher planilhas de terceiros")
