@@ -2,8 +2,9 @@ name: Disparar Alerta Ntfy
 
 on:
   schedule:
-    # Executa todos os dias às 11:00 UTC (08:00 no horário de Brasília)
-    - cron: '0 11 * * *'
+    # Executa todos os dias às 12:00 UTC (08:00 no horário de cuiaba) e 17:00 UTC = 13:00 em cuiaba
+    - cron: '0 12 * * *'
+    - cron: '0 17 * * *'
   workflow_dispatch:
 
 jobs:
