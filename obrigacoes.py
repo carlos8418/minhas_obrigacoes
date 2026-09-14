@@ -33,7 +33,7 @@ def verificar_obrigacoes():
     elif dia_semana == 3:
         enviar_notificacao("Hoje é dia de: Preencher planilhas de terceiros"; "HOJE É DIA DE PREENCHER PANILHA DE EQUIPAMENTO")
     
-    # lembrete semanal
+    # lembrete mensal
     # Dispara no dia 2 do mes (3 dias antes do dia 5)
     if hoje.day == 2:
         enviar_notificação("ATENÇÃO: Faltam 3 dias par o prazo final (dia 05) de enviar a MEDIÇÃO!")
