@@ -23,7 +23,7 @@ def verificar_obrigacoes():
 
     # --- SUAS OBRIGAÇÕES SEMANAIS ---
     if dia_semana == 0:
-        enviar_notificacao("Hoje é dia de: Verificar diário de obras"; "HOJE É DIA DE PREENCHER PANILHA DE TERCEIROS")
+        enviar_notificacao("Hoje é dia de: Verificar diário de obras. E HOJE É DIA DE PREENCHER PANILHA DE TERCEIROS")
     elif dia_semana == 1:
         enviar_notificação("Hoje é dia de:Extrair as planilhas de insumos e corrigi-la no excel ")
         
@@ -31,12 +31,15 @@ def verificar_obrigacoes():
         enviar_notificacao("Hoje é dia de:PREENCHER PANILHA DE MÃO DE OBRA")
     
     elif dia_semana == 3:
-        enviar_notificacao("Hoje é dia de: Preencher planilhas de terceiros"; "HOJE É DIA DE PREENCHER PANILHA DE EQUIPAMENTO")
+        enviar_notificacao("Hoje é dia de: Preencher planilhas de terceiros. E HOJE É DIA DE PREENCHER PANILHA DE EQUIPAMENTO")
     
     # lembrete mensal
     # Dispara no dia 2 do mes (3 dias antes do dia 5)
     if hoje.day == 2:
-        enviar_notificação("ATENÇÃO: Faltam 3 dias par o prazo final (dia 05) de enviar a MEDIÇÃO!")
+        enviar_notificação("ATENÇÃO: Faltam 3 dias para o prazo final (dia 05) de enviar a MEDIÇÃO!")
+    elif hoje.day == 3:
+        enviar_notificação("ATENÇÃO: NÃO ESQUECE DE FAZER O DIÁRIO MANUAL DA PREFEITURA DE CNP!")
+
 
 if __name__ == "__main__":
     verificar_obrigacoes()
